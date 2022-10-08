@@ -1,0 +1,55 @@
+@import '../default-scss/variables';
+
+.search_block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .search_input {
+        width: 230px;
+        height: 32px;
+        font-size: 18px;
+        padding: 0px 35px 0px 10px;
+        background-color: rgb(28, 26, 26);
+        color: $white;
+        font-family: 'Sulphur Point', sans-serif;
+        border: none;
+
+        &:focus {
+            outline:none;
+
+            &::placeholder {
+                color: rgb(28, 26, 26);
+            }
+        }
+
+        
+
+
+        &::placeholder {
+            color: $white;
+            letter-spacing: 1px;
+        }
+    }
+
+    .search_icon {
+        font-size: 22px;
+        color: $white;
+        position: absolute;
+        right: 5px;
+        top: 2px;
+        cursor: pointer;
+        transition: .4s;
+
+        &:focus {
+            border: none;
+        }
+
+        &:hover {
+            transform: scale(1.1);
+            color: $red;
+            filter: drop-shadow(2px 2px 2px $red);
+        }
+    }
+}

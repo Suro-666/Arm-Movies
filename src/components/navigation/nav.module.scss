@@ -1,0 +1,33 @@
+@import '../default-scss/variables';
+
+.Nav {
+    font-family: 'Sulphur Point', sans-serif;
+    letter-spacing: 1px;
+
+
+    .ul {
+        width: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .navLink_not_active {
+            font-size: 20px;
+            text-decoration: none;
+            color: $white;
+            border-bottom: 1px solid $white;
+            transition: .3s;
+            
+            &:hover {
+                filter: drop-shadow(2px 2px 3px $white);
+            }
+        }
+        
+        .navLink_active {
+            font-size: 20px;
+            text-decoration: none;
+            color: $red;
+            border-bottom: 1px solid $white;
+        }
+    }
+}
