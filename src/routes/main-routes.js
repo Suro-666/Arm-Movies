@@ -1,18 +1,31 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import { Routes, Route } from "react-router";
-import { userRoutes, adminRoutes } from "./page-routes";
+import { guestRoutes, privateRoutes } from "./page-routes";
 
 const MainRoutes = () => {
-   const token = true
-    return (
+    const token = useSelector(state => state.token.token)
+    return token ? (
         <Routes>
-            {token ? userRoutes?.map((item) => 
-                <Route key={item.name} path={item.path} element={item.element}/>
-            ):adminRoutes.map((item) =>
-                <Route key={item.name} path={item.path} element={item.element}/>
-            )}
+            {privateRoutes.map((item) => (
+                <Route
+                    key={item.name}
+                    path={item.path}
+                    element={item.element}
+                />
+            ))}
         </Routes>
-    )
-}
+    ) : (
+        <Routes>
+            {guestRoutes.map((item2) => (
+                <Route
+                    key={item2.name}
+                    path={item2.path}
+                    element={item2.element}
+                />
+            ))}
+        </Routes>
+    );
+};
 
-export default MainRoutes
+export default MainRoutes;
