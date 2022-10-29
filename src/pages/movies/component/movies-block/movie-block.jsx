@@ -1,21 +1,19 @@
 import React from "react";
 import CategoryBlock from "../../../../components/category-block";
 
-
-import styles from './movie-block.module.scss';
+import styles from "./movie-block.module.scss";
 
 const MovieBlock = () => {
     return (
-        <div className={styles.Movie_block}>
-            
-            <CategoryBlock text='Popular'/>
+     <div className={styles.Movie_block}>
 
-            <CategoryBlock text='Fantasy'/>
+            <CategoryBlock text="Popular" />
 
-            <CategoryBlock text='Drama'/>
+            <CategoryBlock text="Fantasy" />
 
+            <CategoryBlock text="Drama" />
         </div>
-    )
-}
+    );
+};
 
-export default MovieBlock
+export default MovieBlock;
