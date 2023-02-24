@@ -6,6 +6,7 @@ const config = {
     messagingSenderId: "1008025946043",
     appId: "1:1008025946043:web:e9e226b7ea6677ef66e69e",
     measurementId: "G-J5GKCHB7KL",
+    databaseURL: "https://arm-movies-default-rtdb.firebaseio.com/",
 };
 
 export default config;

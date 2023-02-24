@@ -1,0 +1,86 @@
+@import '../default-scss/variables';
+
+.footer {
+    width: 100%;
+    height: 250px;
+    background-color: $black;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+
+    
+
+    .footer_mine {
+        min-width: 1400px;
+        margin: 0 auto;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 10;
+
+        .top_block {
+            width: 100%;
+            height: 210px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .contacts {
+                width: 300px;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+                color: $white;
+
+                p {
+                    font-size: 22px;
+                    color: $red;
+                    font-weight: bold;
+                }
+
+                .social_sites_block {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    a {
+                        margin-bottom: 10px;
+                        text-decoration: none;
+                        color: $white;
+                        transition: .3s;
+                        cursor: pointer;
+
+                        &:hover {
+                            filter: drop-shadow(0px 0px 5px $white);
+                            color: $red;
+                        }
+                    }
+                }
+            }
+        }
+
+        .line {
+            width: 100%;
+            background-color: $grey;
+            height: 1px;
+        }
+
+
+        .bottom_block {
+            width: 100%;
+            height: 40px;
+            padding: 10px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $white;
+            font-size: 18px;
+            letter-spacing: 1px;
+        }
+    }
+}

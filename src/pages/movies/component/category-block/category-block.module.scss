@@ -1,0 +1,307 @@
+@import '../../../../components/default-scss/variables';
+
+// .category_block {
+//     width: 100%;
+//     height: auto;
+//     display: flex;
+//     flex-direction: column;
+//     margin-bottom: 40px;
+//     padding-bottom: 20px;
+
+//     .row1 {
+//         height: 30px;
+//         display: flex;
+//         justify-content: flex-start;
+//         align-items: center;
+//         margin-bottom: 20px;
+
+//         .genre_line {
+//             width: 10px;
+//             height: 100%;
+//             background-color: $black;
+//             margin-right: 10px;
+//         }
+
+//         .genre_text_div {
+//             width: 100%;
+//             height: 100%;
+//             background: linear-gradient(to right, rgb(255, 255, 255) , rgb(55, 52, 52));
+//             display: flex;
+//             align-items: center;
+
+
+//             .genre_text {
+//                 color: rgb(255, 0, 0);
+//                 letter-spacing: 4px;
+//                 margin-left: 10px;
+//                 cursor: pointer;
+//                 transition: .3s;
+
+//                 &:hover {
+//                     filter: drop-shadow(2px 2px 4px $black);
+//                 }
+//             }
+//         }
+
+//     }
+
+//     .row2 {
+//         display: flex;
+//         justify-content: flex-start;
+
+//         .movie_container {
+//             width: 190px;
+//             height: 100%;
+//             margin-right: 20px;
+
+            
+            
+//             .movie {
+//                 position: relative;
+//                 width: 100%;
+//                 height: 250px;
+//                 overflow: hidden;
+//                 cursor: pointer;
+//                 display: flex;
+//                 justify-content: center;
+//                 align-items: center;
+
+//                 .background_buttons {
+//                     position: absolute;
+//                     display: flex;
+//                     flex-direction: column;
+//                     justify-content: center;
+//                     align-items: center;
+//                     transition: .4s;
+
+//                     .buy_button {
+//                         width: 80px;
+//                         height: 30px;
+//                         font-weight: bold;
+//                         font-size: 20px;
+//                         z-index: 100;
+//                         margin-bottom: 20px;
+//                         background-color: rgb(55, 52, 52,0.8);
+//                         border: none;
+//                         display: none;
+//                         color: $white;
+//                         transition: .4s;
+
+//                         &:hover {
+//                             cursor: pointer;
+//                             filter: drop-shadow(2px 2px 6px white);
+//                         }
+//                     }
+    
+//                     .more_button {
+//                         letter-spacing: 2px;
+//                         width: 100px;
+//                         height: 30px;
+//                         font-weight: bold;
+//                         font-size: 20px;
+//                         z-index: 100;
+//                         background-color: rgb(55, 52, 52,0.8);
+//                         border: none;
+//                         display: none;
+//                         color: $white;
+//                         transition: .4s;
+
+//                         &:hover {
+//                             cursor: pointer;
+//                             filter: drop-shadow(2px 2px 6px white);
+//                         }
+//                     }
+//                 }
+
+//                 &:hover img {
+//                     transform: scale(1.07);
+//                 }
+//                 &:hover .more_button {
+//                     display: block;
+//                 }
+//                 &:hover .buy_button {
+//                     display: block;
+//                 }
+                
+//                 img {
+//                     width: 100%;
+//                     height: 100%;
+//                     transition: .4s;
+//                 }
+
+//             }
+
+//             .movie_info_block {
+//                 padding-top: 20px;
+//                 height: 100px;
+//                 display: flex;
+//                 flex-direction: column;
+//                 justify-content: space-between;
+
+//                 p {
+//                     font-size: 18px;
+//                     font-weight: bold;
+
+//                     span {
+//                         color: green;
+//                     }
+//                 }
+//             }
+//         }
+
+//     }
+// }
+
+@media screen and (min-width: 1201px) {
+    .category_block {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+        padding-bottom: 20px;
+    
+        .row1 {
+            height: 30px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 20px;
+    
+            .genre_line {
+                width: 10px;
+                height: 100%;
+                background-color: $black;
+                margin-right: 10px;
+            }
+    
+            .genre_text_div {
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(to right, rgb(255, 255, 255) , rgb(55, 52, 52));
+                display: flex;
+                align-items: center;
+    
+    
+                .genre_text {
+                    color: rgb(255, 0, 0);
+                    letter-spacing: 4px;
+                    margin-left: 10px;
+                    cursor: pointer;
+                    transition: .3s;
+    
+                    &:hover {
+                        filter: drop-shadow(2px 2px 4px $black);
+                    }
+                }
+            }
+    
+        }
+    
+        .row2 {
+            display: flex;
+            justify-content: flex-start;
+    
+            .movie_container {
+                width: 20%;
+                height: 100%;
+                margin-right: 20px;
+    
+                
+                
+                .movie {
+                    position: relative;
+                    width: 100%;
+                    height: 250px;
+                    overflow: hidden;
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+    
+                    .background_buttons {
+                        position: absolute;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        transition: .4s;
+    
+                        .buy_button {
+                            width: 100px;
+                            height: 30px;
+                            font-weight: bold;
+                            font-size: 20px;
+                            z-index: 100;
+                            margin-bottom: 20px;
+                            background-color: rgb(55, 52, 52,0.8);
+                            border: none;
+                            display: none;
+                            color: $white;
+                            transition: .4s;
+    
+                            &:hover {
+                                cursor: pointer;
+                                filter: drop-shadow(2px 2px 6px white);
+                            }
+                        }
+        
+                        .more_button {
+                            letter-spacing: 2px;
+                            width: 120px;
+                            height: 30px;
+                            font-weight: bold;
+                            font-size: 20px;
+                            z-index: 100;
+                            background-color: rgb(55, 52, 52,0.8);
+                            border: none;
+                            display: none;
+                            color: $white;
+                            transition: .4s;
+    
+                            &:hover {
+                                cursor: pointer;
+                                filter: drop-shadow(2px 2px 6px white);
+                            }
+                        }
+                    }
+    
+                    &:hover img {
+                        transform: scale(1.07);
+                    }
+                    &:hover .more_button {
+                        display: block;
+                    }
+                    &:hover .buy_button {
+                        display: block;
+                    }
+                    
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        transition: .4s;
+                    }
+    
+                }
+    
+                .movie_info_block {
+                    padding-top: 20px;
+                    height: 100px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+    
+                    p {
+                        font-size: 18px;
+                        font-weight: bold;
+    
+                        span {
+                            color: green;
+                        }
+                    }
+                }
+            }
+    
+        }
+    }
+}

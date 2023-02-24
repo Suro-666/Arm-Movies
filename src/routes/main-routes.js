@@ -4,8 +4,8 @@ import { Routes, Route } from "react-router";
 import { routes } from "./page-routes";
 
 const MainRoutes = () => {
-    const user = useSelector(state => state.user)
-    return user.token ? (
+    const token = useSelector(state => state.user.token)
+    return token ? (
         <Routes>
             {routes.privateRoutes.map((item) => (
                 <Route

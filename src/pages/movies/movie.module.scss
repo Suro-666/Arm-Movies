@@ -1,43 +1,54 @@
 @import '../../components/default-scss/variables';
 
-.Movies {
-    width: 100%;
-    min-height: 1200px;
-    color: white;
-    display: flex;
-    background-image: url('../../assets/img/jpg/spiderman.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+// .Movies {
+//     max-width: 1400px;
+//     margin: 0 auto;
+//     min-height: 1200px;
+//     background: rgb(255, 255, 255);
+//     display: flex;
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     position: relative;
     
-    .left_column {
-        height: auto;
-        width: 18%;
-        background-color: rgba(26, 30, 30, 0.6);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        
-        p {
-            color: $white;
-            font-size: 25px;
-            margin-top: 25px;
-            letter-spacing: 1px;
-        }
+//     .left_column {
+//         position: fixed;
+//         height: calc(100vh - 90px );
+//         width: 260px;
+//         background-color: rgba(26, 30, 30, 0.5);
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//     }
 
-        .rating_input_1 {
-            -webkit-appearance: none;
-            outline: none;
-            width: 250px;
-            height: 7px;
-            border-radius: 5px;
-        }
-    }
+//     .right_column {
+//         margin-left: 280px;
+//         height: auto;
+//         width: 82%;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//     }
+// }
 
-    .right_column {
-        height: auto;
-        width: 82%;
+@media screen and (min-width: 1201px) {
+    .Movies {
+        width: 1200px;
+        margin: 0 auto;
+        min-height: 1200px;
+        background: rgb(255, 255, 255);
         display: flex;
-        justify-content: center;
-        align-items: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+    
+        .right_column {
+            margin-right: 40px;
+            margin-left: 40px;
+            height: auto;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
 }

@@ -1,20 +1,25 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
+import { getDatabase } from "firebase/database";
+import { initializeApp } from "firebase/app";
 import { Provider } from "react-redux";
 import { store } from "./redux/index";
-import App from "./App";
-import * as firebase from "firebase/app";
 import config from "./firebase.js";
+import App from "./App";
+import './18n';
 
 import "./index.css";
 
-firebase.initializeApp(config);
+const app = initializeApp(config);
+getDatabase(app);
 
 createRoot(document.getElementById("root")).render(
     <Provider store={store}>
         <BrowserRouter>
-            <App />
+            <Suspense fallback={<div>Loading...</div>}>
+                <App />
+            </Suspense>
         </BrowserRouter>
     </Provider>
 );

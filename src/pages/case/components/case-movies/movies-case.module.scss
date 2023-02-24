@@ -1,0 +1,55 @@
+@import '../../../../components/default-scss/variables';
+
+.main {
+    width: 90%;
+    height: 100%;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+
+    .movie {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #E8E8E8;
+
+        .movie_img {
+            width: 70px;
+            height: 90px;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .info {
+            display: flex;
+            margin-left: 20px;
+        }
+
+        .remove_target_movie_btn {
+            width: 50px;
+            height: 50px;
+            font-size: 25px;
+            color: $red;
+            background-color: none;
+            background: none;
+            border: none;
+            transition: .3s;
+
+            &:hover {
+                cursor: pointer;
+                filter: drop-shadow(0px 0px 5px $black)
+            }
+        }
+
+    }
+    .remove_case_btn {
+        width: 200px;
+        height: 30px;
+    }
+}

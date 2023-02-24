@@ -1,9 +1,11 @@
 import React from "react";
-import Profile from "../pages/profile";
-import About from "../pages/about";
-import Movies from "../pages/movies";
-import SignIn from "../components/sign-in/sign-in";
-import SignUp from "../components/sign-up/sign-up";
+import Profile from "../pages/profile/profile";
+import About from "../pages/about/about";
+import Movies from "../pages/movies/movies";
+import SignIn from "../pages/sign-in/sign-in";
+import SignUp from "../pages/sign-up/sign-up";
+import MoreInfo from "../pages/more-for-movie/more-info";
+import Case from "../pages/case/case";
 
 export const routes = {
     guestRoutes: [
@@ -37,13 +39,19 @@ export const routes = {
             path: "/sign-up",
             element: <SignUp />,
         },
+        {
+            name: "moreInfo",
+            text: "MoreInfo",
+            path: "/more-info/:movieName",
+            element: <MoreInfo />,
+        },
     ],
 
     privateRoutes: [
         {
             name: "profile",
             text: "Profile",
-            path: "/profile/:id",
+            path: "/profile/:uid",
             element: <Profile />,
         },
         {
@@ -64,8 +72,20 @@ export const routes = {
             path: "/about",
             element: <About />,
         },
+        {
+            name: "moreInfo",
+            text: "MoreInfo",
+            path: "/more-info/:movieName",
+            element: <MoreInfo />,
+        },
+        {
+            name: "case",
+            text: "Case",
+            path: "/case",
+            element: <Case />,
+        },
     ],
-    
+
     routesForNavigation: [
         {
             name: "movies",
